@@ -1,3 +1,8 @@
+# CounterMeasure: initial readme 
+
+This is the CounterMeasure web application.
+by Theo Cummings
+
 == Welcome to Rails
 
 Rails is a web-application framework that includes everything needed to create
