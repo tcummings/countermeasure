@@ -1,0 +1,16 @@
+1
+1) install ruby
+2) install rails
+3) 
+//Passender (deployment):
+//open a terminal, and type:
+1. gem install passenger
+//Type:
+2. passenger-install-apache2-module
+//Or, if you want to install the Nginx version instead:
+2.a)passenger-install-nginx-module
+And follow the instructions.
+Or, for the standalone version, type:
+
+3. cd /path/to/your/webapp
+4. passenger start
