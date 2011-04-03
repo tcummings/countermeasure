@@ -1,5 +1,10 @@
 module ApplicationHelper
 
+  #logo
+  def logo
+    image_tag("logo.png", :alt => "Counter Measure", :class => "round")
+  end
+
   #Title
   def title
     base_title = "Counter Measure"
