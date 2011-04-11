@@ -41,3 +41,32 @@ REQUESTING PAGE: GET /help with {} and HTTP headers {"HTTP_REFERER"=>"/about"}
 REQUESTING PAGE: GET /contact with {} and HTTP headers {"HTTP_REFERER"=>"/help"}
 REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/contact"}
 REQUESTING PAGE: GET /register with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /register with {} and HTTP headers {}
+REQUESTING PAGE: POST /users with {"utf8"=>"\xE2\x9C\x93", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"Register"} and HTTP headers {"HTTP_REFERER"=>"/register"}
+REQUESTING PAGE: GET /register with {} and HTTP headers {}
+REQUESTING PAGE: GET /register with {} and HTTP headers {}
+REQUESTING PAGE: POST /users with {"utf8"=>"\xE2\x9C\x93", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"Register"} and HTTP headers {"HTTP_REFERER"=>"/register"}
+REQUESTING PAGE: GET /register with {} and HTTP headers {}
+REQUESTING PAGE: GET /register with {} and HTTP headers {}
+REQUESTING PAGE: GET /register with {} and HTTP headers {}
+REQUESTING PAGE: GET /register with {} and HTTP headers {}
+REQUESTING PAGE: GET /register with {} and HTTP headers {}
+REQUESTING PAGE: GET /register with {} and HTTP headers {}
+REQUESTING PAGE: GET /register with {} and HTTP headers {}
+REQUESTING PAGE: GET /register with {} and HTTP headers {}
+REQUESTING PAGE: GET /register with {} and HTTP headers {}
+REQUESTING PAGE: GET /register with {} and HTTP headers {}
+REQUESTING PAGE: GET /register with {} and HTTP headers {}
+REQUESTING PAGE: GET /register with {} and HTTP headers {}
+REQUESTING PAGE: POST /users with {"utf8"=>"\xE2\x9C\x93", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"Register"} and HTTP headers {"HTTP_REFERER"=>"/register"}
+REQUESTING PAGE: GET /register with {} and HTTP headers {}
+REQUESTING PAGE: POST /users with {"utf8"=>"\xE2\x9C\x93", "user"=>{"name"=>"Test User", "email"=>"user@countermeasures.com", "password"=>"spaz", "password_confirmation"=>"spaz"}, "commit"=>"Register"} and HTTP headers {"HTTP_REFERER"=>"/register"}
+REQUESTING PAGE: GET /register with {} and HTTP headers {}
+REQUESTING PAGE: POST /users with {"utf8"=>"\xE2\x9C\x93", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"Register"} and HTTP headers {"HTTP_REFERER"=>"/register"}
+REQUESTING PAGE: GET /register with {} and HTTP headers {}
+REQUESTING PAGE: POST /users with {"utf8"=>"\xE2\x9C\x93", "user"=>{"name"=>"Test User", "email"=>"user@countermeasures.com", "password"=>"spaz", "password_confirmation"=>"spaz"}, "commit"=>"Register"} and HTTP headers {"HTTP_REFERER"=>"/register"}
+REQUESTING PAGE: GET /register with {} and HTTP headers {}
+REQUESTING PAGE: POST /users with {"utf8"=>"\xE2\x9C\x93", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"Register"} and HTTP headers {"HTTP_REFERER"=>"/register"}
+REQUESTING PAGE: GET /register with {} and HTTP headers {}
+REQUESTING PAGE: POST /users with {"utf8"=>"\xE2\x9C\x93", "user"=>{"name"=>"Test User", "email"=>"user@countermeasures.com", "password"=>"spazel", "password_confirmation"=>"spazel"}, "commit"=>"Register"} and HTTP headers {"HTTP_REFERER"=>"/register"}
+REQUESTING PAGE: GET http://www.example.com/users/1 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
