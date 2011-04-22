@@ -1,12 +1,17 @@
 Countermeasure::Application.routes.draw do
+  get "sessions/new"
+
   resources :users
+  resources :sessions, :only => [:new, :create, :destroy]
 
   root :to => 'pages#home'
   
-  match '/register', :to => 'users#new'
-  match '/contact', :to => 'pages#contact'
-  match '/about', :to => 'pages#about'
-  match '/help', :to => 'pages#help'
+  match '/register',  :to => 'users#new'
+  match '/login',     :to => 'sessions#new'
+  match '/logout',    :to => 'sessions#destroy'
+  match '/contact',   :to => 'pages#contact'
+  match '/about',     :to => 'pages#about'
+  match '/help',      :to => 'pages#help'
 
 
   # The priority is based upon order of creation:
