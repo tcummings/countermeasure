@@ -3,6 +3,7 @@ Countermeasure::Application.routes.draw do
 
   resources :users
   resources :sessions, :only => [:new, :create, :destroy]
+  resources :bicycles, :only => [:create, :destroy]
 
   root :to => 'pages#home'
   

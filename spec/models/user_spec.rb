@@ -82,7 +82,8 @@ describe User do
       long = "a" * 41
       hash = @attr.merge(:password => long, :confirmation_password => long)
       User.new(hash).should_not be_valid
-    end    
+    end
+
   end
 
   describe "password encryption" do
@@ -108,6 +109,7 @@ describe User do
       it "should be false if the passwords don't match" do
         @user.has_password?("invalid").should be_false
       end
+
     end
 
     describe "authenticate method" do
@@ -126,6 +128,7 @@ describe User do
         matching_user = User.authenticate(@attr[:email], @attr[:password])
         matching_user.should == @user
       end
+
     end
 
   end
@@ -147,6 +150,31 @@ describe User do
     it "should be convertible to an admin" do
       @user.toggle!(:admin)
       @user.should be_admin
+    end
+
+  end
+
+  describe "bicycle associations" do
+
+    before(:each) do
+      @user = User.create(@attr)
+      @bike1 = Factory(:bicycle, :user => @user, :model => 'Capo')
+      @bike2 = Factory(:bicycle, :user => @user, :model => 'Vigarelli')
+    end
+
+    it "should have a bicycles attribute" do
+      @user.should respond_to(:bicycles)
+    end
+
+    it "should have the bicycles in the right order" do
+      @user.bicycles.should == [@bike1, @bike2]
+    end
+
+    it "should destroy the associated bicycles" do
+      @user.destroy
+      [@bike1, @bike2].each do |bicycle|
+        Bicycle.find_by_id(bicycle.id).should be_nil
+      end
     end
 
   end

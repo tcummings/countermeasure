@@ -1,5 +1,20 @@
-<p>
-  This is the home page for the Counter Measure application Bitch!
-</p>
+<% if signed_in? %>
+  <table class="front" summary="For authenticated users">
+    <tr>
+      <td class="main">
+        <h1 class="bicycle">Add a bike...</h1> 
+        <%= render 'shared/bicycle_form' %>
+      </td>
+      <td class="sidebar round">
+        <%= render 'shared/user_info' %>
+      </td>
+    </tr>
+  </table>
+<% else %>
+  <h1>Counter Measures</h1>
+  <p>
+  Welcome to the Counter Measures
+  </p>
 
-<%= link_to "Register", register_path, :class => "signup_button" %>
+  <%= link_to "Register", register_path, :class => "signup_button" %>
+<% end %>

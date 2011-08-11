@@ -13,3 +13,12 @@ end
 Factory.sequence :name do |n|
   "person #{n}"
 end
+
+Factory.define :bicycle do |bicycle|
+  bicycle.avatar          "small_bike.jpg"
+  bicycle.serial_number   "123-456-7890"
+  bicycle.color           "black"
+  bicycle.make            "Cannondale"
+  bicycle.model           "Capo"
+  bicycle.association     :user
+end

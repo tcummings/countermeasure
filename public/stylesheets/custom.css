@@ -3,11 +3,14 @@
 }
 
 body {
-  background: #cff;
+  background: #FFF; /* #cff; */ /*light blue*/
 }
 
 header {
   padding-top: 20px;
+  border-style: dotted;
+  border-width: thin;        /* sets border width on all sides */
+  border-color: grey;
 }
 
 header img {
@@ -20,6 +23,9 @@ section {
   font-size: 120%;
   padding: 20px;
   background: #fff;
+  border-style: dashed dashed dashed solid;
+  border-width: thin;        /* sets border width on all sides */
+  border-color: grey;
 }
 
 section h1 {
@@ -27,7 +33,6 @@ section h1 {
 }
 
 /* Links */
-
 a {
   color: #09c;
   text-decoration: none;
@@ -52,7 +57,6 @@ nav {
 }
 
 /* Navigation */
-
 nav {
   float: right;
 }
@@ -82,7 +86,6 @@ nav ul li a:hover {
 }
 
 /* Sign up button */
-
 a.signup_button {
   margin-left: auto;
   margin-right: auto;
@@ -104,13 +107,23 @@ a.signup_button {
   border-radius:         2px;
 }
 
+.clearfix:after {    
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
 /* Footer */
 footer {
   text-align: center;
   margin-top: 10px;
   width: 710px;
-  margin-left: auto;
-  margin-right: auto;
+  /* bottom three three lines */
+  border-style: dotted;
+  border-width: thin;  /* margin-left: auto;*/
+  border-color: grey;  /* margin-right: auto;*/
 }
 
 footer nav {
@@ -129,7 +142,7 @@ td.main {
 }
 
 td.sidebar {
-  width: 30%;
+  width: 20%;
   padding: lem;
   vertical-align: top;
   background: #ffc;
@@ -191,4 +204,58 @@ ul.users {
 
 .users li {
   list-style: none;
+}
+
+/* bicycles */
+h1.bicycles{
+  margin-bottom: 0.3em;
+}
+
+ul#bicycles{
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+ul#bicycles li{
+  border-top: 1px solid #ccc;
+  padding: 10px;
+
+}
+
+div.bike_avatar {
+  border: 1px solid #ccc;
+  float: left;
+  width: 50px;
+  margin-right: 10px;
+}
+
+div.bike_info {
+  background-color: white;
+  float: left;
+}
+
+div.user_info img {
+  padding-right: 0.1em;
+}
+
+div.user_info a {
+  text-decoration: none;
+}
+
+div.user_info span.user_name {
+  position: absolute;
+}
+
+div.user_info span.bicycles {
+  font-size: 80%;
+}
+
+form.new_bicycle {
+  margin-bottom: 2em;
+}
+
+form.new_bicycle textarea{
+  height: 4em;
+  margin-bottom: 0;
 }

@@ -206,6 +206,21 @@ describe UsersController do
     end
   end
 
+  describe "GET 'show'" do
+
+    before(:each) do
+      @user = Factory(:user)
+    end
+
+    it "should show the user's bicycles" do
+      bike1 = Factory(:bicycle, :user => @user, :make => "Cannondale")
+      bike2 = Factory(:bicycle, :user => @user, :make => "Bianchi")
+      get :show, :id => @user
+      response.should have_selector("div.bike_info", :content => bike1.make)
+      response.should have_selector("div.bike_info", :content => bike2.make)
+    end
+  end
+
   describe "PUT 'input'" do
       
     before(:each) do
