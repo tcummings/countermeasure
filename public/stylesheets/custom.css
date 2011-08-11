@@ -8,9 +8,6 @@ body {
 
 header {
   padding-top: 20px;
-  border-style: dotted;
-  border-width: thin;        /* sets border width on all sides */
-  border-color: grey;
 }
 
 header img {
@@ -23,9 +20,9 @@ section {
   font-size: 120%;
   padding: 20px;
   background: #fff;
-  border-style: dashed dashed dashed solid;
-  border-width: thin;        /* sets border width on all sides */
-  border-color: grey;
+/*  border-style: dashed dashed dashed solid;
+  border-width: thin;         sets border width on all sides /
+  border-color: grey;*/
 }
 
 section h1 {
@@ -120,10 +117,6 @@ footer {
   text-align: center;
   margin-top: 10px;
   width: 710px;
-  /* bottom three three lines */
-  border-style: dotted;
-  border-width: thin;  /* margin-left: auto;*/
-  border-color: grey;  /* margin-right: auto;*/
 }
 
 footer nav {
@@ -224,7 +217,7 @@ ul#bicycles li{
 }
 
 div.bike_avatar {
-  border: 1px solid #ccc;
+ /* border: 1px solid #ccc;*/
   float: left;
   width: 50px;
   margin-right: 10px;
