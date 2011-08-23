@@ -1,8 +1,12 @@
-<%= form_for @bicycle do |f| %>
+<%= form_for @bicycle, :html => {:multipart => true} do |f| %>
   <%= render 'shared/error_messages', :object => f.object %>
   <div class="field">
-    <%= f.label :picture %><br />
-    <%= f.text_field :avatar %>
+    <%= f.label :bike_image %><br />
+    <%= f.file_field :avatar %>
+  </div>
+  <div class="field">
+    <%= f.label :remote_avatar_url, "Or remote image URL"%><br />
+    <%= f.text_field :remote_avatar_url %>
   </div>
   <div class="field">
     <%= f.label :make %><br />

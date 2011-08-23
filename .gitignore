@@ -5,6 +5,7 @@ db/*.sqlite3
 log/*.log
 tmp/
 doc/
+public/uploads/
 *.swp
 *~
 .project

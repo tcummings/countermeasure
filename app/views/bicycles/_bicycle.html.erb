@@ -1,6 +1,6 @@
 <li class="clearfix">
   <div class="bike_avatar">
-    <%= image_tag bicycle.avatar, :size => "50x30" %> <! bike image >
+    <%= image_tag bicycle.avatar_url(:thumb).to_s, :size => "50x30" %> <! bike image >
   </div>
   <div class="bike_info">
     <strong>Make: </strong><%= bicycle.make %> <! bike make>
